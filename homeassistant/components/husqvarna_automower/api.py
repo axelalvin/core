@@ -4,13 +4,14 @@ import logging
 from typing import cast
 
 from aioautomower.auth import AbstractAuth
-from aioautomower.const import API_BASE_URL
 from aiohttp import ClientSession
 
 from homeassistant.helpers import config_entry_oauth2_flow
 
 _LOGGER = logging.getLogger(__name__)
 
+
+API_BASE_URL = "https://api.qa-amc.husqvarna.dev/v1"
 
 class AsyncConfigEntryAuth(AbstractAuth):
     """Provide Husqvarna Automower authentication tied to an OAuth2 based config entry."""

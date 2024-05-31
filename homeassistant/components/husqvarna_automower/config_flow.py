@@ -15,7 +15,7 @@ from .const import DOMAIN, NAME
 _LOGGER = logging.getLogger(__name__)
 
 CONF_USER_ID = "user_id"
-HUSQVARNA_DEV_PORTAL_URL = "https://developer.husqvarnagroup.cloud/applications"
+HUSQVARNA_DEV_PORTAL_URL = "https://app.qa-developer-portal.dss.husqvarnagroup.net/applications"
 
 
 class HusqvarnaConfigFlowHandler(
